@@ -8,6 +8,22 @@
     <h1>My Website</h1>
 
     <p>Today is 20200229！</p>
+    
+    <div id="container"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+    id: 'mysky',
+    owner: 'miniloft',
+    repo: 'miniloft.github.io',
+    oauth: {
+        client_id: 'c3e3492ed5e63dd1ab82',
+        client_secret: 'c79337e236e67d5939ac4ce3463e913bd52739b2',
+    },
+    })
+    gitment.render('container')
+    </script>
 
   </body>
 </html>		
